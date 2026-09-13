@@ -1,0 +1,26 @@
+html {
+  direction: rtl;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background: #a6a5a5;
+  font-family: "Vazirmatn";
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  background: white;
+  align-items: center;
+  font-size: 1.75rem;
+  color: rgb(40, 40, 40);
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
