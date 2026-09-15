@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+/* reset a tag */
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* 2. Remove default margin */
 *:not(dialog) {
   margin: 0;

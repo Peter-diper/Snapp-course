@@ -11,16 +11,81 @@ body {
 
 /* navbar */
 
+header {
+  background: white;
+}
+
 .navbar {
   display: flex;
-  background: white;
   align-items: center;
-  font-size: 1.75rem;
-  color: rgb(40, 40, 40);
+  font-size: 1.4rem;
+  color: rgba(45, 45, 45, 0.687);
+  max-width: 90vw;
+  margin: 0 auto;
 }
 
 .nav-list {
-  display: flex;
+  display: none;
   list-style: none;
   gap: 2rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+.nav-list-item:hover {
+  color: rgb(87, 175, 87);
+}
+@media screen and (min-width: 47rem) {
+  .nav-list {
+    display: flex;
+  }
+}
+
+.nav-anker {
+  display: block;
+  top: 0.2rem;
+  position: relative;
+  font-weight: 700;
+  font-size: 1.6rem;
+  transition: transform 200ms;
+  transform: rotate(0deg);
+}
+
+.super-app-nav:hover .nav-anker {
+  transform: rotate(-90deg);
+}
+
+.super-app-list {
+  display: none;
+}
+.super-app-nav:hover .super-app-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.super-app-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  word-wrap: none;
+  padding: 2rem 0;
+}
+
+.super-app-list {
+  position: absolute;
+  top: 5rem;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 15px;
+  z-index: 10;
+  border: 1px solid rgb(212, 210, 210);
+  text-wrap: nowrap;
+  list-style: none;
+}
+
+.super-app-list a:hover {
+  color: rgb(87, 175, 87);
 }
